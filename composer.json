@@ -1,0 +1,8 @@
+{
+    "name": "weblab/geolookup",
+    "autoload": {
+	"psr-4": {
+            "Weblab\\GeoLookup\\": "src"
+        }
+    }
+}
