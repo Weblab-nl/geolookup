@@ -1,5 +1,5 @@
 <?php
-namespace Weblab\GeoLookup;
+namespace Weblab;
 
 /**
  * Class holding a pair of geo coordinates marking a point on the map
@@ -56,7 +56,7 @@ class GeoCoordinates {
      * Set the latitudue
      * 
      * @param   float                                               The latitude to set
-     * @return  \Weblab\GeoLookup\GeoCoordinates                    Instance of this to make chaining possible
+     * @return  \Weblab\GeoCoordinates                    Instance of this to make chaining possible
      */
     public function setLatitude($latitude) {
         // set the latitude
@@ -70,7 +70,7 @@ class GeoCoordinates {
      * Set the longitude
      * 
      * @param   float                                               The longitude to set
-     * @return  \Weblab\GeoLookup\GeoCoordinates                    Instance of this to make chaining possible
+     * @return  \Weblab\GeoCoordinates                    Instance of this to make chaining possible
      */
     public function setLongitude($longitude) {
         // set the longitude

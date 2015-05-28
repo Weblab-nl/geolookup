@@ -1,6 +1,6 @@
 <?php
 // add the namespace
-namespace Weblab\GeoLookup;
+namespace Weblab;
 
 /**
  * Class that gives access to the google maps api
@@ -17,7 +17,7 @@ class GeoLookup {
     /**
      * Singleton instance
      *
-     * @var \Weblab\GeoLookup\GeoLookup
+     * @var \Weblab\GeoLookup
      */
     private static $instance = null;
     
@@ -27,10 +27,9 @@ class GeoLookup {
     private function __construct() { }
 
     /**
-     * Singleton access the \Weblab\GeoLookup\GeoLookup
-     * class
+     * Singleton access the \Weblab\GeoLookup class
      * 
-     * @return \Weblab\GeoLookup\GeoLookup
+     * @return \Weblab\GeoLookup
      */
     public static function instance() {
         // if the instance of the google maps class has been created already,
@@ -40,7 +39,7 @@ class GeoLookup {
         }
         
         // create a new instance of the google maps class and return it
-        return self::$instance = new \Weblab\GeoLookup\GeoLookup();
+        return self::$instance = new \Weblab\GeoLookup();
     }
     
     
@@ -48,7 +47,7 @@ class GeoLookup {
      * Request the google maps result object based on an address
      * 
      * @param   string                                          The address
-     * @return  \Weblab\GeoLookup\GoogleMapsResult              The google maps api result object
+     * @return  \Weblab\GoogleMapsResult              The google maps api result object
      */
     public static function requestByAddress($address) {
         // the parameters needed to get the google maps address information
@@ -69,7 +68,7 @@ class GeoLookup {
         }
         
         // done, return the google maps 
-        return new \Weblab\GeoLookup\GoogleMapsResult($geocode);
+        return new \Weblab\GoogleMapsResult($geocode);
     }
     
     /**

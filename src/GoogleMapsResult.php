@@ -1,5 +1,5 @@
 <?php
-namespace Weblab\GeoLookup;
+namespace Weblab;
 
 /**
  * Class holding a result returned by the google maps api
@@ -65,7 +65,7 @@ class GoogleMapsResult {
     /**
      * Get the geo coordinates for the google maps result
      * 
-     * @return \Weblab\GeoLookup\GeoCoordinates         The latitude and longitude wrapped into a GeoCoordinates object
+     * @return \Weblab\GeoCoordinates         The latitude and longitude wrapped into a GeoCoordinates object
      */
     public function geoCoordinates() {
         // get the latitude
@@ -80,6 +80,6 @@ class GoogleMapsResult {
         }
         
         // return the geo coordinates
-        return new \Weblab\GeoLookup\GeoCoordinates($latitude, $longitude);
+        return new \Weblab\GeoCoordinates($latitude, $longitude);
     }
 }
