@@ -1,8 +1,8 @@
 {
-    "name": "weblab/geolookup",
+    "name": "weblabnl/geolookup",
     "autoload": {
 	"psr-4": {
-            "Weblab\\GeoLookup\\": "src"
+            "Weblab\\": "src"
         }
     }
 }
