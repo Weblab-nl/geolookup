@@ -82,4 +82,13 @@ class GoogleMapsResult {
         // return the geo coordinates
         return new \Weblab\GeoCoordinates($latitude, $longitude);
     }
+    
+    /**
+    * Get the result
+    *
+    * @return   \stdClass
+    */
+    public function getResult() {
+        return $this->result;
+    }
 }
