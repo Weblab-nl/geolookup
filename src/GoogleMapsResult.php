@@ -92,3 +92,4 @@ class GoogleMapsResult {
         return $this->result;
     }
 }
+
