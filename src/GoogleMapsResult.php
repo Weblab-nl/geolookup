@@ -98,7 +98,7 @@ class GoogleMapsResult {
      * @return  string
      */
     public function getStatus() {
-        $this->result->status;
+        return $this->result->status;
     }
 }
 
