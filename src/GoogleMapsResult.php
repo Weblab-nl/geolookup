@@ -91,5 +91,14 @@ class GoogleMapsResult {
     public function getResult() {
         return $this->result;
     }
+    
+    /**
+     * Return the status of the result
+     *
+     * @return  string
+     */
+    public function getStatus() {
+        $this->result->status;
+    }
 }
 
