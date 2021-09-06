@@ -49,11 +49,12 @@ class GeoLookup {
      * @param   string                                          The address
      * @return  \Weblab\GoogleMapsResult              The google maps api result object
      */
-    public static function requestByAddress($address) {
+    public static function requestByAddress($address, $language = 'nl') {
         // the parameters needed to get the google maps address information
         $parameters = array(
             'address'   => $address,
             'sensor'    => 'false',
+            'language'  => $language
         );
  
         // create a google maps object to get access to the google maps api
