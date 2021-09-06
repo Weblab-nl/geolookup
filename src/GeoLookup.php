@@ -12,7 +12,7 @@ class GeoLookup {
     /**
      * The google maps api base url
      */
-    const BASE_URL = 'http://maps.google.com/maps/api/geocode/json';
+    const BASE_URL = 'https://maps.google.com/maps/api/geocode/json';
 
     /**
      * Singleton instance
