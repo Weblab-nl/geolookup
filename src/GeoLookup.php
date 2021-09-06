@@ -80,6 +80,9 @@ class GeoLookup {
      * @return  string          The response of the google maps api
      */
     protected function curl($parameters) {
+        // add the key
+        $parameters['key'] = \Config::get('google.key');
+        
         // create the url
         $url = self::BASE_URL . '?' . http_build_query($parameters);
         
